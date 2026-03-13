@@ -1,15 +1,49 @@
-# rota-json-simples
+# Rota JSON Simples
 
-To install dependencies:
+Este projeto é um exemplo básico de um servidor HTTP utilizando o [Bun](https://bun.sh/), que retorna uma resposta JSON simples.
 
-```bash
-bun install
+## Descrição
+
+O servidor responde na porta `3000` com uma mensagem JSON contendo:
+
+```json
+{
+  "message": "Olá, mundo!"
+}
 ```
 
-To run:
+## Requisitos
 
-```bash
-bun run index.ts
-```
+- [Bun](https://bun.sh/) instalado na máquina.
 
-This project was created using `bun init` in bun v1.3.10. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## Como executar
+
+1. Clone este repositório:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd rota-json-simples
+   ```
+
+2. Instale as dependências (se houver):
+   ```bash
+   bun install
+   ```
+
+3. Inicie o servidor:
+   ```bash
+   bun run index.ts
+   ```
+
+4. Acesse o servidor em [http://localhost:3000](http://localhost:3000).
+
+## Estrutura do Projeto
+
+- `index.ts`: Contém a lógica do servidor.
+- `package.json`: Configurações do projeto.
+- `tsconfig.json`: Configurações do TypeScript.
+- `README.md`: Documentação do projeto.
+
+## Tecnologias Utilizadas
+
+- [Bun](https://bun.sh/)
+- TypeScript
